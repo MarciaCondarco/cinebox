@@ -33,16 +33,31 @@
     </section>
     <section id="filmes-recomendados">
         <h2 class="titulo">filmes</h2>
-        <main>
-            <div class="linha">
-                <div class="coluna coluna-3">Poster 1</div>
-                <div class="coluna coluna-3">Poster 2</div>
-                <div class="coluna coluna-3">Poster 3</div>
-                <div class="coluna coluna-3">Poster 4</div>
-                <div class="coluna coluna-3">Poster 5</div>
-                <div class="coluna coluna-3">Poster 6</div>
-                <div class="coluna coluna-3">Poster 7</div>
-                <div class="coluna coluna-3">Poster 8</div>
+        <main class="container">
+            <div class="row">
+                <div class="col col-3">
+                    <figure>
+                        <!-- a tag figure -> para marcar imagem e legenda -->
+                        <img src="./assets/img/poster/avatar-o-caminho-da-agua.png" alt="poster do filme avatar o caminho da agua" class="foto-produto">
+                        <figcaption>
+                            <!-- figcaption apresenta a legenda da imagem -->
+                            <h4>Avatar o caminho da agua</h4>
+                            <span class="preco">R$15,90</span>
+                            <!-- A TAG SPAN é usada para agrupar elementos em linha em um documento -->
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sapiente exercitationem inventore, nisi debitis corporis quos blanditiis eaque ex est obcaecati sint doloribus tenetur magni voluptatem, iste sed maiores ab.</p>
+                        </figcaption>
+                        <span class="genero">
+                            <label style="background-color: #070373;">Fantasia</label>
+                            <label style="background-color: #580259;">Drama</label>
+                            <label style="background-color: #d966ba;">Ficção</label>
+                            <!-- label é a tag, funciona como etiqueta para o campo input -->
+                        </span>
+                    </figure>
+                </div>
+                <div class="col col-3">
+                    
+
+                </div>
             </div>
         </main>
         <!-- .linhas>div*9.colunas  - >  classe linha dentro tem nove divs com classe colunas -->
