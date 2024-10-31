@@ -8,10 +8,8 @@
 }
 
 #filmes_recomendados figure{
-    /* # somente com ID / . para chamar o class / */
     background-color: #D9D9D9;
     padding: 15px 0; 
-/* padding para colocar borda a altura  */
     max-width: 400px;
     width: 100%;
     height: 600px;
@@ -24,12 +22,10 @@
     height: 95%;
     width: 100%;
 
-    /* tamanho maximo da imagem */
+    /* o max-height alcança o tamanho maximo da imagem */
     max-height: 380px;
     max-width: 280px;
     border-radius: 20px;
-
-    /*  */
     object-fit: cover;
 }
 
@@ -38,7 +34,7 @@
     /* pra ele ser sempre 10% do max width, sempre que uso% é porque nao e algo fixo */
     padding: 0 10%;
     display: flex;
-    /* flex grow para usar todo espaço disponivel  */
+    /* flex grow para usar o espaço disponivel ao todo */
     flex-grow: 1;
     flex-direction: column;
     
@@ -47,13 +43,12 @@
 #filmes_recomendados figcaption h4{
     margin-bottom: 0;
     font-weight: 900;
-    /* text align start é para alinhar na esquerda */
     text-align: start;
     height: 55px;
 }
 
 #filmes_recomendados span.preco{
-    /* deixando bem definido onde eu vou mexer na tag span com uma class chamada preco */
+    /* o id filmes_remendados onde tem a tag span com a classe preco, é o caminho  */
     color: #9125A3;
     font-weight: 700;
     font-size: 1.2rem;

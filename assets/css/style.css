@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{ 
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal; 
+    font-weight: 500;
+    font-style: normal;
 }
-
 header nav{
     background-color: #f2f2f2;
     padding: 30px 0;
@@ -15,29 +16,24 @@ header nav{
     justify-content: space-around;
     align-items: center;
 }
-
-.logo{
-    text-decoration: none;
+.logo{ 
+    text-decoration: none; 
     color: #011c26;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer; /* muda o designe do curso para uma mão com o dedo indicador estendido  */
 }
-
-.menu, .menu-icones{
-    list-style: none;
+.menu, .menu-icones{ 
+    list-style: none; 
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    /* o gap é o espaçamento dos elemento */
+    gap: 5px; 
 }
-.menu li a, .menu-icones li a{
+.menu li a, .menu-icones li a{ 
     text-decoration: none;
     color:#011c26;
-    padding: 8px;
+    padding:8px;
     border-radius: 8px;
 }
-
 .menu li a:hover, .menu-icones li a:hover{
     background-color: #011c26;
-    color: white;
+    color:white
 }
