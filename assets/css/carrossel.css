@@ -11,4 +11,34 @@
     max-width: 1920px;
     border: 2px solid #cccccc;
     border-radius: 10px;
+    overflow: hidden;
+    /* overflow é aquilo que aparecer a mais ele esconda */
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    /* toda a vez que o transition encontrar o tramsform, que em 1 segundo vai fazer o ease-in-out -> tipo de transição */
+}
+
+.carrossel-container>button{
+    /* o carrossel - container dentro tem varios buttoms */
+    background-color: rgba(0,0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transform: translateY(-50%);
+    position: absolute;
+    /* valor absoluto o comando que der recebe */
+    top: 50%;
+}
+.carrossel-container>button.anterior{
+    /* a div chamada carrossel-container tem button com o nome anterior e o left posiciona o item 10px para a esquerda */
+    left: 10px;
+}
+.carrossel-container>button.proximo{
+    /* a div chamada carrossel-container tem button com o nome proximo e o right posiciona o item 10px para a direita */
+    right: 10px;
 }
