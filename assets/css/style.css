@@ -58,12 +58,11 @@ div.menu-oculto{
     /* left para o menu abrir da esquerda para direita */
     z-index:1 ;
     /* quanto maior esse valor mais a frente ele vai ficar */
-    width: 250px;
+    width: 0;
     overflow-x: hidden;
     /* serve para ocultar / prensar o dimensionando em largura todo que estiver no menu  */
     padding-top: 60px;
     transition: 0.5s;
-    display: none;
     
 }
 div.menu-oculto a {
