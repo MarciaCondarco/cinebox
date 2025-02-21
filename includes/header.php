@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./assets/css/carrossel.css">
     <link rel="stylesheet" href="./assets/css/filmes.css">
     <link rel="stylesheet" href="./assets/js/offcanvas.js">
+    <link rel="stylesheet" href="./assets/css/usuario.css">
 </head>
 
 <body>
