@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +7,6 @@
     <meta charset="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-
     <?php   
     if(isset($titulo) && !empty($titulo)){
         echo $titulo;
@@ -14,8 +15,6 @@
         echo 'Cinebox';
     }
     ?>
-
-
     </title>
 <!-- isset -> é existe
 ''''    empty -> é vazio  
@@ -28,18 +27,20 @@
     <link rel="stylesheet" href="./assets/css/filmes.css">
     <link rel="stylesheet" href="./assets/js/offcanvas.js">
     <link rel="stylesheet" href="./assets/css/usuario.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="menu-perfil">
             <a href="./index.php" class="logo">
                 <h1>Cine box</h1>
             </a>
             <ul class="menu">
                 <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./listarfilmes.php">Filmes</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./sobre.php">Sobre</a></li>
             </ul>
 
             <ul class="menu-icones">
@@ -57,8 +58,8 @@
                     <i class="bi bi-x"></i>
                 </button>
                 <a href="index.html">Inicio</a>
-                <a href="#">Filmes</a>
-                <a href="#">Sobre</a>
+                <a href="./listarfilmes.php">Filmes</a>
+                <a href="./sobre.php">Sobre</a>
             </div>
         </nav>
     </header>
