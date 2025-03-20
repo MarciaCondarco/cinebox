@@ -46,7 +46,7 @@
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./usuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
             <!-- começando com o hamburguer -->
             <button class="menu-oculto" onclick="javascript:abrirNav()">

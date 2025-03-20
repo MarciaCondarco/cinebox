@@ -1,3 +1,19 @@
+<!-- <?php
+
+$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+$user = 'root';
+$password = '';
+
+$banco = new PDO($dsn, $user, $password);
+
+$select = 'SELECT * FROM tb_produtos ORDER BY RAND() LIMIT 8';
+
+$resultado = $banco->query($select)->fetchAll();
+
+?>
+
+<?php foreach ($resultado as $linha) { ?> -->
+
 <div class="col col-3">
                     <figure>
                         <!-- se começa primeiro a tag  figure para prossegir com o figcapture  -->
@@ -24,3 +40,5 @@
 
                     </figure>
                 </div>
+
+<!-- <?php } ?> -->
