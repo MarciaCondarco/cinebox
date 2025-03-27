@@ -21,6 +21,10 @@ class Filmes{
         // vai retornar as funções do banco, obs: o return funciona somente dentro de uma função
     }
 
-
+    public function exibirFilmeConsulta(){
+        if(!isset($_GET['id'])){
+            header('location:filmes-consultar.php');
+        }
+    }
 
 }

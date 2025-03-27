@@ -6,6 +6,7 @@
             <?php foreach ($dadosFilmes as $value)
             // foreach passa linha por linha
             {
+                $generosFilme = $generos->consultarGeneroByIdFilme($value['id']);
                  include './includes/filme_card.php';
             } 
             ?>                
