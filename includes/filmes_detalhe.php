@@ -11,14 +11,6 @@ $generos = new Generos();
 $dadosGeneros = $generos-> consultarGeneroByIdFilme($id_);
 
 ?>
-<style>
-    span{
-        color: white;
-    }
-    img{
-        width: 500px;
-    }
-</style>
 
 <section id="detalhe">
     <main class="container">
