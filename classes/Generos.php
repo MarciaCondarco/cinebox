@@ -31,5 +31,6 @@ class Generos{
 
         return $this->conexaoBanco->query($script)->fetchAll();
     }
+
 }
 ?>

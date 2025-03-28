@@ -1,15 +1,30 @@
-</php
+<?php
+require './classes/Generos.php';
 require './classes/Filmes.php';
 
+$id_ = $_GET['id'];
+
+$filmes = new Filmes();
+$dados = $filmes-> exibirDetalhesFilmes();
+
 $generos = new Generos();
-$dadosGeneros = $generos-> consultarListaGeneros();
+$dadosGeneros = $generos-> consultarGeneroByIdFilme($id_);
 
 ?>
+<style>
+    span{
+        color: white;
+    }
+    img{
+        width: 500px;
+    }
+</style>
+
 <section id="detalhe">
     <main class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-                <img src="<?=('poster/' . $dados['poster']) ?>" alt="poster Jedi Survivor" class="foto ">
+                <img src="./assets/img/<?= ('poster/' . $dados['poster']) ?>" alt="poster Jedi Survivor" class="foto ">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 detalhe-produto py-5">
                 <h1 class="titulo-jogo"><?= $dados['nome'] ?></h1>

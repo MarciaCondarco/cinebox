@@ -7,7 +7,7 @@
             // foreach passa linha por linha
             {
                 $generosFilme = $generos->consultarGeneroByIdFilme($value['id']);
-                 include './includes/filme_card.php';
+                include './includes/filme_card.php';
             } 
             ?>                
             </div>
